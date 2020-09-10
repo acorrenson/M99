@@ -131,7 +131,7 @@ int main(int argc, char const *argv[]) {
   load(v, prog_1, 63);
   v->PC = 40;
   while (1) {
-    // printf("R: %d\nA: %d\nB: %d\nPC: %d\n\n", v->R, v->A, v->B, v->PC);
+    printf("R: %d\nA: %d\nB: %d\nPC: %d\n\n", v->R, v->A, v->B, v->PC);
     m99_cycle(v);
   }
   return 0;
