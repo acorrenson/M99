@@ -14,12 +14,7 @@ typedef struct {
 
 VM *new_VM() {
   VM *v = malloc(sizeof(VM));
-  v->R = 0;
-  v->A = 0;
-  v->B = 0;
-  v->PC = 0;
-  for (int i = 0; i < RAM_SIZE; i++)
-    v->ram[i] = 0;
+  memset(v, 0, sizeof(VM));
   return v;
 }
 
